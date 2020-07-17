@@ -8,8 +8,8 @@ Authors@R:
            email = "luca.zamagni@unil.ch",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: the package consists of a set of functions to approximate the aggregate claim distribution in the collective risk model setting.
-    The approximations include Panjer, FFT, and moments approximations. Regarding the latter, the package contains useful functions to quickly derive 
-    the first 5 moments of the aggregate distribution. 
+    The approximations include Panjer, FFT, and moments approximations. 
+    Regarding the latter, the package contains useful functions to quickly derive the first 5 moments of the aggregate distribution. 
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

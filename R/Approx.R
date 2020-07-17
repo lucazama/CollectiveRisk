@@ -92,7 +92,7 @@ MomentsApprox <- function(m,moments,type,n){
 #'from a claim frequency distribution in the (a,b,0) class and any continuous claim intensity distribution.
 #'@usage panjer(fx, dist, par, step, m)
 
-#'@param fx continuous Probability Density Function (PDF) for the claim intensities.
+#'@param fx continuous Probability distribution Function (CDF) for the claim intensities.
 #'@param dist c("Poisson","NegBin", "Binomial")
 #'@param par vector of parameters of the claim frequency distributions (as ordered as in the built in PDF function)
 #'@param step width of the discretization (for a computing time lower than a couple of minutes choose step such that m/step <20000)
@@ -246,8 +246,8 @@ FFT <- function(phi, n,lower,upper, m ){
 
 #'@usage FFT2 (fx,fm, n,lower,upper, m )
 #'
-#'@param fx PDF of the claim intesities.
-#'@param fm PDF of the claim frequency.
+#'@param fx CDF of the claim intesities.
+#'@param fm Moment generating function of the Claim frequency.
 #'@param n number of points used in the discretization (possibly a power of 2)
 #'@param lower starting point of the discretization of X
 #'@param upper end point of the discretization of X

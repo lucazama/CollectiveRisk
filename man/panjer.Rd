@@ -7,7 +7,7 @@
 panjer(fx, dist, par, step, m)
 }
 \arguments{
-\item{fx}{continuous Probability Density Function (PDF) for the claim intensities.}
+\item{fx}{continuous Probability distribution Function (CDF) for the claim intensities.}
 
 \item{dist}{c("Poisson","NegBin", "Binomial")}
 

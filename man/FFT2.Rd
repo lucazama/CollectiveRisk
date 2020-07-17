@@ -7,7 +7,7 @@
 FFT2 (fx,fm, n,lower,upper, m )
 }
 \arguments{
-\item{fx}{PDF of the claim intesities.}
+\item{fx}{CDF of the claim intesities.}
 
 \item{n}{number of points used in the discretization (possibly a power of 2)}
 
@@ -17,7 +17,7 @@ FFT2 (fx,fm, n,lower,upper, m )
 
 \item{m}{approximation to P(S>m)}
 
-\item{fm}{PDF of the claim frequency.}
+\item{fm}{Moment generating function of the Claim frequency.}
 }
 \value{
 the function returns P(S>m)

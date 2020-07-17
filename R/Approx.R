@@ -277,18 +277,16 @@ FFT2 <- function(fx, fM,n, lower,upper,m){
 }
 
 
-#'@title Simulator of random numbers from some not so common distributions
+#'@title Simulator of random numbers from some not-so-common distributions
 #'@description The function simulates random numbers from some distributions
-#'@param distN For now distN= c("NegBin","Binomial","Poisson")
-#'@param distY For now distY= c("Gamma", "Exponential","LogNormal","Weibul")
-#'@param parN the parameters of the chosen counting distribution
-#'@param parY the parameters of the chosen claim intensities distribution.
+#'@param dist distribution from which to simulate c("Pareto", "TruncWeibull", TruncLogNormal")
+#'@param par parameters of the distribution chosen.
 #'@param n the number of simulations.
-#'@return The function returns the simulations of S. If you want to compute the probability P(S<m)
-#'you can simply run the following command mean(S<m)
-#'@example S=simulation(distN= "Poisson", distY="Gama",parN=30,parY=c(3,2),n=10000)
-#'mean(S>50)
-#'@note Confidence intervals still to be added (along with more distributions, and truncated versions as well)
+#'@return The function returns the simulations of Y. If you want to compute the probability P(Y<m)
+#'you can simply run the following command mean(Y<m)
+#'@example Y=simulator(dist="Pareto",parY=c(3,2),n=10000)
+#'mean(Y>50)
+#'@note Confidence intervals still to be added (along with more distributions)
 #'@export
 simulator <- function(dist, par,n){
   if (dist=="Pareto"){

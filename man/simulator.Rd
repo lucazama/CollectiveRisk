@@ -2,28 +2,24 @@
 % Please edit documentation in R/Approx.R
 \name{simulator}
 \alias{simulator}
-\title{Simulator of random numbers from some not so common distributions}
+\title{Simulator of random numbers from some not-so-common distributions}
 \usage{
 simulator(dist, par, n)
 }
 \arguments{
+\item{dist}{distribution from which to simulate c("Pareto", "TruncWeibull", TruncLogNormal")}
+
+\item{par}{parameters of the distribution chosen.}
+
 \item{n}{the number of simulations.}
-
-\item{distN}{For now distN= c("NegBin","Binomial","Poisson")}
-
-\item{distY}{For now distY= c("Gamma", "Exponential","LogNormal","Weibul")}
-
-\item{parN}{the parameters of the chosen counting distribution}
-
-\item{parY}{the parameters of the chosen claim intensities distribution.}
 }
 \value{
-The function returns the simulations of S. If you want to compute the probability P(S<m)
-you can simply run the following command mean(S<m)
+The function returns the simulations of Y. If you want to compute the probability P(Y<m)
+you can simply run the following command mean(Y<m)
 }
 \description{
 The function simulates random numbers from some distributions
 }
 \note{
-Confidence intervals still to be added (along with more distributions, and truncated versions as well)
+Confidence intervals still to be added (along with more distributions)
 }

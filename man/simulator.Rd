@@ -22,7 +22,7 @@ The function returns the simulations of S. If you want to compute the probabilit
 you can simply run the following command mean(S<m)
 }
 \description{
-The function simulates the aggregate claim size distribution
+The function simulates random numbers from some distributions
 }
 \note{
 Confidence intervals still to be added (along with more distributions, and truncated versions as well)

@@ -278,7 +278,7 @@ FFT2 <- function(fx, fM,n, lower,upper,m){
 
 
 #'@title Simulator of random numbers from some not so common distributions
-#'@description The function simulates the aggregate claim size distribution
+#'@description The function simulates random numbers from some distributions
 #'@param distN For now distN= c("NegBin","Binomial","Poisson")
 #'@param distY For now distY= c("Gamma", "Exponential","LogNormal","Weibul")
 #'@param parN the parameters of the chosen counting distribution

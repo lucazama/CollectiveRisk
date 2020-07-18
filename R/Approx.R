@@ -254,7 +254,7 @@ FFT <- function(phi, n,lower,upper, m ){
 #'@param m approximation to P(S>m)
 #'
 #'@details The function works for any aggregate claim distribution. It is not that stable when the lower and upper bounds are not selected with accuracy.
-#' (be sure to consider a great part of the domain of S)
+#' (be sure to consider a great part of the domain of X)
 
 #'@examples FFT2(fx=function(x) pgamma(x,40,2),fM= function(t) exp(30*(exp(t)-1)),n=2^19, lower=0, upper=3000,m=900)
 #'@return the function returns P(S>m)
@@ -300,7 +300,7 @@ simulator <- function(dist, par,n){
     k <- par[2]
     alpha <- par[3]
     U <- runif(n)
-    return( lambda* (alpha/lambda -log(1-U))^(1/k))
+    return( lambda* (+(alpha/lambda)^k -log(1-U))^(1/k))
   }
   if (dist=="TruncLogNormal"){
     mu <- par[1]
@@ -315,7 +315,7 @@ simulator <- function(dist, par,n){
     m=runif(n*1.5)
     z=(-1/alfa)* (log(1-m)-t*alfa)
     p=exp(-(alfa-z)^2/2)
-    u=runif(length(p),0,1)
+    u=runif(length(p))
     x=numeric(length(p))
     i=1
     count=0
@@ -331,8 +331,6 @@ simulator <- function(dist, par,n){
   }
 }
 
-
-# Moments("Pareto",c(3,2),"raw")
 
 
 

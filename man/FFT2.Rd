@@ -27,7 +27,7 @@ Computes the Fast Fourier Approximation to P(S>m), where S is the aggregate clai
 }
 \details{
 The function works for any aggregate claim distribution. It is not that stable when the lower and upper bounds are not selected with accuracy.
-(be sure to consider a great part of the domain of S)
+(be sure to consider a great part of the domain of X)
 }
 \note{
 the discretization bounds (lower and upper) are generally different from those of FFT. In FFT the discretization
